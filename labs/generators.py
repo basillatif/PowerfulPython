@@ -53,7 +53,12 @@ BLASTOFF!
 
 # Write your code here:
 
-
+#evens = evens_up_to(8)
+def evens_up_to(ceiling):
+    num = 2
+    while num<=ceiling:
+        yield num
+        num += 2
 
 # Do not edit any code below this line!
 
