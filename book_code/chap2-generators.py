@@ -20,3 +20,15 @@ len(items)
 calories['orange'] = 50
 print(('orange', 50) in items)
 print(('orange', 20) in items)
+
+foods = calories.keys() 
+counts = calories.values()
+#False
+print('yogurt' in foods))
+#False
+print(100 in counts)
+calories['yogurt'] = 100 
+#True
+print('yogurt' in foods)
+#True
+print(100 in counts)
