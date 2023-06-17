@@ -1,13 +1,24 @@
+#An iterator over a collection is a separate object, with its own identity - which you can verify with id():
 numbers = [7, 4, 11, 3]
+id(numbers)
+
 #iter() is a generator method
 #<list_iterator object at 0x10b473e20>
 print(iter(numbers))
+#next() - Each time you call it, next(my_iterator) fetches and returns the next element
 print('')
 names = ["Tom", "Shelly", "Garth"] 
 names_it = iter(names)
 print("next(names_it):",  next(names_it))
 print("next(names_it):",  next(names_it))
 print("next(names_it):",  next(names_it))
+#2.2 generator objects
+def gen_nums(): 
+    n=0
+    while n < 4:
+        yield n 
+        n += 1
+#2.3Generator Patterns and Scalable Composability
 
 #2.4 Python is filled with Iterators
 calories = { "apple": 95,
