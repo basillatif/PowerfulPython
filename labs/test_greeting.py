@@ -16,5 +16,5 @@ class TestGreeting(unittest.TestCase):
     def test_greet(self):
         greet("John")
         #assert "Hi, John" == greet("John")
-        self.assertEqual("Hi, John", greet("John"))
+        self.assertEqual("Hi, John", greet("Hi, John"))
 

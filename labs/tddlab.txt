@@ -109,7 +109,10 @@ Identify all these elements in your output:
 
  * Where is the test module ("test_greeting") specified?
  * Where is the test class ("TestGreeting") specified?
+  # in the test_greeting.py file
  * Where is the test method ("test_greet") specified?
+   # in the test_greeting.py file
+
  * What is the line number of the failing test?
 
 Once you have done all of this, proceed to the next step.
