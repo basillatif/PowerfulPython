@@ -60,6 +60,18 @@ def evens_up_to(ceiling):
         yield num
         num += 2
 
+def squares_up_to(ceiling):
+    num, square = 1, 1
+    while square <= ceiling:
+        yield square
+        num += 1
+        square = num ** 2
+
+def countdown(start):
+    while start > 0:
+        yield start
+        start -= 1
+    yield "BLASTOFF!"
 # Do not edit any code below this line!
 
 if __name__ == '__main__':
