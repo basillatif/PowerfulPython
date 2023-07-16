@@ -101,7 +101,15 @@ Got value from diff: 0
 '''
 
 # Write your code here:
+def rounded(func):
+    def wrapper(*args, **kwargs):
+        return round(func(*args, **kwargs))
+    return wrapper
 
+def shout(func):
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs).upper()
+    return wrapper
 
 
 # Do not edit any code below this line!
